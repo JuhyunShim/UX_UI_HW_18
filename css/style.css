@@ -1,0 +1,94 @@
+.logo {
+    background: #211161;
+    height: 200px;
+    background-image: url("../ux_ui_hw_17/Logo\ Purple\ Background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  body {
+    background: #211161;
+  }
+  
+  .nav {
+    display: flex;
+    background-color: #211161;
+    padding: 20px;
+    width: 0 auto;
+    border-color:black;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+  }
+  
+  .left, .center{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .right {
+      height: 50px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  }
+  
+  .left, .right {
+    width: 25%;
+  }
+  .center {
+    width: 50%;
+  }
+  
+  .center a {
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+
+  }
+  
+  .right button {
+    background-color: #211161;
+    border-color: yellow;
+    color:yellow;
+    font-size: 16px;
+    padding: 15px;
+    width: 50%;
+    border-radius: 30px;
+  }
+  
+  .heroImg {
+    display: flex;
+    height: 1200px;
+    width: 800px;
+    flex-direction: column;
+    margin: 0 auto;
+    opacity: .9;
+  }
+  .heroText {
+    background: rgb(89,9,79,0.1);
+    width: 90%;
+    padding: 20px 40px;
+    color: white;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+    .footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #EEF4FB;
+    height: 300px;
+    padding: 25px;
+    margin: 0 auto;
+  }
+  .centerFooter a {
+    color:black;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    display:flex;
+    align-items: center;
+  }
