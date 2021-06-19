@@ -1,14 +1,12 @@
+body {
+  background: #211161;
+}
 .logo {
+    display:flex;
     background: #211161;
-    height: 200px;
-    background-image: url("/images/Logo\ Purple\ Background.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 100px;
+    justify-content:center;
   }
-  body {
-    background: #211161;
-  }
-  
   .nav {
     display: flex;
     background-color: #211161;
@@ -60,14 +58,13 @@
   
   .heroImg {
     display: flex;
-    height: 1200px;
+    height: 800px;
     width: 800px;
     flex-direction: column;
     margin: 0 auto;
     opacity: .9;
   }
   .heroText {
-    background: rgb(89,9,79,0.1);
     width: 90%;
     padding: 20px 40px;
     color: white;
@@ -91,4 +88,195 @@
     font-family: 'Josefin Sans', sans-serif;
     display:flex;
     align-items: center;
+  }
+    /* Code for Internal Page FAILED
+
+    .workGrid .workGrid2 {
+      display: grid;
+      grid-template-columns: 2;
+      grid-template-rows: 3;
+      grid-template-areas: 
+      height: 1200px;
+      width: 800px;
+      flex-direction: column;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+    .workGrid2 {    
+      display: grid; 
+      height: 1200px;
+      width: 800px;
+      flex-direction: column;
+      margin: 0 auto;
+      opacity: .9;
+      justify-content: space-between;
+    }
+    
+    .interiorPage {
+      color: white;
+      padding: 10px;
+      font-size: 18px;
+      text-decoration: none;
+      font-family: 'Josefin Sans', sans-serif;
+  
+    }
+    
+    .leftLearn .rightLearn {
+      background-color: #211161;
+      border-color: yellow;
+      color:yellow;
+      font-size: 16px;
+      padding: 15px;
+      width: 50%;
+      border-radius: 30px;
+    }
+    .leftLearn button {
+        height: 50px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .righttLearn button {
+      height: 50px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  }
+  .workGrid p .workGrid2 p{
+    width: 90%;
+    padding: 20px 40px;
+    color: white;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  */
+
+  /* CSS Grid for Internal Page FAILED
+
+  .interiorPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "auditions classes"
+    "audText classText"
+    "buttonL buttonR";
+    justify-items: center;
+    align-items: center;
+    height: 600px;
+    width: 0 auto;
+    padding: 5px;
+
+  }
+  .workGrid img {
+    grid-area: "auditions";
+  }
+  .workGrid p {
+    grid-area: "audText";
+  }
+  .workGrid2 img {
+    grid-area: "classes";
+  }
+  .workGrid2 p {
+    grid-area: "classText";
+  }
+  .leftLearn {
+    grid-area: "buttonL";
+  }
+  .rightLearn {
+    grid-area: "buttonR";
+  }
+   */
+
+   #behindthecurtains {
+     text-align: center;
+     color: white;
+     padding: 10px;
+     font-size: 36px;
+     text-decoration: none;
+     font-family: 'Josefin Sans', sans-serif;
+   }
+   #categoryGrid {
+    margin: 0px 5%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 200px 100px 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "auditions classes"
+    "auditionsTxt classesTxt"
+    "button button2";
+    
+  }
+  
+  #auditions {
+    grid-area: auditions;
+    justify-content: center;
+    align-items: center;
+  }
+  #classes {
+    grid-area: classes;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #auditionsTxt {
+    grid-area: auditionsTxt;
+    color: white;
+    padding: 100px;
+    margin-top: 80px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #classesTxt {
+    grid-area: classesTxt;
+    color: white;
+    padding: 100px;
+    margin-top: 80px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #button {
+    display:grid;
+    grid-area: button;
+    width: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  #button2 {
+    display:grid;
+    grid-area: button2;
+    width: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .categoryGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: center;
+  }
+  .categoryGridArea button {
+    background-color: #211161;
+    border-color: yellow;
+    color:yellow;
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 30px;
   }
